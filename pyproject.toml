@@ -1,0 +1,22 @@
+[project]
+name = "anpr-proj"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "finleywood", email = "finleyjohnwood@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "easyocr>=1.7.2",
+    "numpy>=2.5.4",
+    "opencv-python-headless>=5.0.0.93",
+    "ultralytics>=8.4.209",
+]
+
+[project.scripts]
+anpr-proj = "anpr_proj:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
